@@ -1,0 +1,71 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2018-07-13 01:31:13.740665'
+    - '2018-07-13 01:31:13.740665'
+
+---
+articles:
+  columns:
+  - id
+  - title
+  - body
+  - visit_count
+  - created_at
+  - updated_at
+  records: 
+  - - 7
+    - 'Articulo nuevo '
+    - Articulo  idshfkerl ojfl.,hrb  fdgr
+    - 
+    - '2018-07-18 02:20:21.392780'
+    - '2018-07-18 02:39:11.318910'
+  - - 8
+    - Articulo nuevo parte 2
+    - prueba nuevo edutjdsbcv  gv
+    - 
+    - '2018-07-18 02:21:32.555095'
+    - '2018-07-18 02:41:13.095558'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - name
+  - permission_level
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - milton1412@yahoo.es
+    - "$2a$11$v/vEt/bncoUYsw/RAlbYAe5RiztJN9jswlMavCjFrTnHQD3H8tHoC"
+    - 
+    - 
+    - 
+    - 2
+    - '2018-07-19 02:38:57.280578'
+    - '2018-07-19 02:25:37.703262'
+    - 127.0.0.1
+    - 127.0.0.1
+    - 
+    - 
+    - '2018-07-19 02:25:37.653259'
+    - '2018-07-19 02:38:57.282578'

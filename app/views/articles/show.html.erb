@@ -1,0 +1,8 @@
+<div class="row">
+<div class="section">
+    <h2><%= @article.title%></h2>
+    <p><%= @article.body%></p>
+    <p><%= @article.visit_count%></p>    
+    <%= link_to "Eliminar", @article,class:"waves-effect waves-light btn",method: :delete%>
+</div>
+</div>

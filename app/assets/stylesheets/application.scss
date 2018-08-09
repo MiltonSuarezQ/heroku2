@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "materialize";
+ /*Tamaño de fuente para toda la pagina*/
+body { 
+    font-size: 18px;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+/*color texto desplegable menu*/
+.dropdown-content li > a, .dropdown-content li > span {    
+    color: #263238;    
+}
+/*Color de texto y fondo cuando hay hover en el menu desplegable*/
+.dropdown-content li > a:hover, .dropdown-content li > span{    
+    color: #ffffff;
+	background-color:#3949ab ;    
+}
+/*Color de los circulos del slide*/
+.slider .indicators .indicator-item.active {
+    background-color: #3949ab ;
+}
+/*color link en tarjeta categorias*/
+a h4{
+    color: rgba(0, 0, 0,0.87);
+}
+/*color hover en tarjeta categorias*/
+a:hover h4{
+    color: #3949ab;
+}
+/*colo de fondo boton menu activo*/
+nav ul li.active {
+    background-color: #37474f;
+}
+/*color de boton paginador activo*/
+.pagination li.active {
+    background-color: #3949ab;
+}
+.footer{
+    margin-top: 100px
+}
+.select {
+    display:block;
+}
+
+
+
+
+ 

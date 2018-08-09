@@ -1,0 +1,26 @@
+<div class="row">
+<% name ||="Crear"%>
+<h3><%= name%> articulo</h3>
+
+<%@article.errors.full_messages.each do |message|%>
+    <div><%=message%></div>
+<% end%>
+<%= form_for(@article, :html =>{ :multipart => true } ) do |f| %>
+    <div class="col s8 center">
+    <%= f.text_field :nombre, placeholder: "Nombre del sitio", required: "required"%>
+    <%= f.text_field :direccion, placeholder: "Dirección", required: "required"%>
+    <%= f.text_field :telefono, placeholder: "Teléfono", required: "required"%>
+    <%= f.select :categoria, [['Turismo', 1], ['Restaurantes', 2], ['Servicios', 3], ['Eventos', 4], ['Entretenimiento', 5], ['Transporte', 6], ['Compras', 7], ['Salud', 8], ['Entidades', 9]], :prompt => 'Seleccione' %>  
+    <%= f.text_area :descripcion, placeholder: "Descripción", class: 'materialize-textarea', id: 'textarea1'%>
+    <%= f.text_field :mapa, placeholder: "Coordenadas", required: "required"%>
+
+    <div class="file-field input-field col s12" style="padding-bottom:40px">
+        <div class="btn">
+            <span>Subir imagen</span>
+            <%= f.file_field :photo%>
+       </div>    
+    </div>
+    <%= f.submit "Ingresar establecimiento", class: 'waves-effect waves-light btn indigo darken-1'%>
+    </div>
+<% end %>
+</div>

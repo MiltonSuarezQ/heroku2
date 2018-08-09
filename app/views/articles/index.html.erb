@@ -1,0 +1,30 @@
+<div class="row">
+<div class="container">
+    <div class="col s12">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Titulo</th>
+                    <th>Cuerpo</th>
+                    <th>Contador de visita</h5></th>
+                    <th>Ver</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @article.each do |reg| %>
+                <tr>
+                    <td><%= reg.id%></td>
+                    <td><%= reg.nombre%></td>
+                    <td><%= reg.categoria%></td>
+                    <td><%= reg.direccion%></td>
+                    <td><a href="articles/<%= reg.id%>"><i class="material-icons">visibility</i></a></td> 
+                    <td><a href="articles/<%= reg.id%>/edit"><i class="material-icons">edit</i></a></td>                    
+                </tr> 
+                <% end %>       
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
